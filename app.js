@@ -20,7 +20,7 @@ app.use(bodyParser.json({ limit: '100mb' }));
 
 app.use(morgan('dev'));
 // app.use(helmet());
-//app.use(cors());
+app.use(cors());
 
 app.use(express.static(path.join(dirname, '/public')));
 
